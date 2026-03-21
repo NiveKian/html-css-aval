@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.SA Résumé</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1250/1250680.png" type="image/x-icon">
+    <script src="main.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Ian.SA</h1>
+            <div class="nav-links">
+                <a href="#home" id="home-link">Home</a>
+                <a href="#about" id="about-link">About</a>
+                <a href="#projects" id="projects-link">Projects</a>
+                <a href="#skills" id="skills-link">Skills</a>
+                <a href="#get-in-touch" id="contact-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#home" id="home-link">
+                    <svg 
+                        alt="Home Icon"
+                        class="nav-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640">
+                        <path fill="currentColor" d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM304 384L336 384C362.5 384 384 405.5 384 432L384 528L256 528L256 432C256 405.5 277.5 384 304 384z"/>
+                    </svg>
+                </a>
+                <a href="#about" id="about-link">
+                    <svg 
+                        alt="About Icon"
+                        class="nav-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640">
+                        <path fill="currentColor" d="M320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM288 224C288 206.3 302.3 192 320 192C337.7 192 352 206.3 352 224C352 241.7 337.7 256 320 256C302.3 256 288 241.7 288 224zM280 288L328 288C341.3 288 352 298.7 352 312L352 400L360 400C373.3 400 384 410.7 384 424C384 437.3 373.3 448 360 448L280 448C266.7 448 256 437.3 256 424C256 410.7 266.7 400 280 400L304 400L304 336L280 336C266.7 336 256 325.3 256 312C256 298.7 266.7 288 280 288z"/>
+                    </svg>
+                </a>
+                <a href="#projects" id="projects-link">
+                    <svg 
+                        alt="Projects Icon"
+                        class="nav-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640">
+                        <path fill="currentColor" d="M128 512L512 512C547.3 512 576 483.3 576 448L576 208C576 172.7 547.3 144 512 144L362.7 144C355.8 144 349 141.8 343.5 137.6L305.1 108.8C294 100.5 280.5 96 266.7 96L128 96C92.7 96 64 124.7 64 160L64 448C64 483.3 92.7 512 128 512z"/>
+                    </svg>
+                </a>
+                <a href="#skills" id="skills-link">
+                    <svg 
+                        alt="Skills Icon"
+                        class="nav-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640">
+                        <path fill="currentColor" d="M541.4 162.6C549 155 561.7 156.9 565.5 166.9C572.3 184.6 576 203.9 576 224C576 312.4 504.4 384 416 384C398.5 384 381.6 381.2 365.8 376L178.9 562.9C150.8 591 105.2 591 77.1 562.9C49 534.8 49 489.2 77.1 461.1L264 274.2C258.8 258.4 256 241.6 256 224C256 135.6 327.6 64 416 64C436.1 64 455.4 67.7 473.1 74.5C483.1 78.3 484.9 91 477.4 98.6L388.7 187.3C385.7 190.3 384 194.4 384 198.6L384 240C384 248.8 391.2 256 400 256L441.4 256C445.6 256 449.7 254.3 452.7 251.3L541.4 162.6z"/>
+                    </svg>
+                </a>
+                <a href="#get-in-touch" id="contact-link">
+                    <svg 
+                        alt="Contact Icon"
+                        class="nav-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 640 640">
+                        <path fill="currentColor" d="M160 64C124.7 64 96 92.7 96 128L96 512C96 547.3 124.7 576 160 576L448 576C483.3 576 512 547.3 512 512L512 128C512 92.7 483.3 64 448 64L160 64zM272 352L336 352C380.2 352 416 387.8 416 432C416 440.8 408.8 448 400 448L208 448C199.2 448 192 440.8 192 432C192 387.8 227.8 352 272 352zM248 256C248 225.1 273.1 200 304 200C334.9 200 360 225.1 360 256C360 286.9 334.9 312 304 312C273.1 312 248 286.9 248 256zM576 144C576 135.2 568.8 128 560 128C551.2 128 544 135.2 544 144L544 208C544 216.8 551.2 224 560 224C568.8 224 576 216.8 576 208L576 144zM576 272C576 263.2 568.8 256 560 256C551.2 256 544 263.2 544 272L544 336C544 344.8 551.2 352 560 352C568.8 352 576 344.8 576 336L576 272zM560 384C551.2 384 544 391.2 544 400L544 464C544 472.8 551.2 480 560 480C568.8 480 576 472.8 576 464L576 400C576 391.2 568.8 384 560 384z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
+                <label for="theme-toggle" class="toggle-label">
+                    <span class="toggle-ball"></span>
+                    <span class="icon sun">☀️</span>
+                    <span class="icon moon">🌙</span>
+                </label>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <img src="https://avatars.githubusercontent.com/u/54177935?v=4" alt="Profile Picture" class="profile-img">
+        <h1>Hi, My name is Ian Silva</h1>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-header">
+                <div class="about-header-card">
+                    <p>Passionate about technology and innovation, I’m a Computer Science graduate focused on building efficient, scalable, and user-centered solutions. With experience in web development, IoT systems, and data-driven applications, I’m eager to contribute to impactful projects and continue growing my skills in the tech industry.</p>
+                    <div class="about-header-btns">
+                        <a href="https://github.com/NiveKian" target="_blank" class="btn">Download CV</a>
+                        <a href="https://www.linkedin.com/in/ian-antunes-087976215/" target="_blank" class="btn">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="Project">
+                    <h3>Shortyfy</h3>
+                    <img src="/img/shortyfy.png" alt="Shortyfy Mockup">
+                    <p>Shortyfy is a web application that allows users to create short URLs for easy sharing and tracking.</p>
+                    <a href="https://github.com/NiveKian/Shortyfy" class="btn">See Details</a>
+                </div>
+                <div class="Project">
+                    <h3>WhoIsThisPokemon</h3>
+                    <img src="/img/pokemon.png" alt="WhoIsThisPokemon Mockup">
+                    <p>A "Who Is This Pokemon App" i made with HTML, CSS and Javascript.</p>
+                    <a href="https://github.com/NiveKian/DaFakPokemon" class="btn">See Details</a>
+                </div>
+                <div class="Project">
+                    <h3>Web Portfolio</h3>
+                    <img src="/img/webportifolio.png" alt="Web Portfolio Mockup">
+                    <p>A WebPortifolio made with React and tailwind CSS.</p>
+                    <a href="https://github.com/NiveKian/NiveWebPortifolio" class="btn">See Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%;"></div> <!-- 5/5 -->
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div> <!-- 4/5 -->
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div> <!-- 3/5 -->
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React">
+                        <span>React</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-in-touch">
+        <div style="text-align: center; padding-top: 8rem;" class="container">
+            <h2>Get in Touch</h2>
+            <div class="form-container">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="cellphone" placeholder="Your Cell Phone" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn" >Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <p>&copy; 2026 ISA. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://github.com/NiveKian" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/ian-antunes-087976215/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
