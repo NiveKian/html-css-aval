@@ -33,7 +33,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 65px;
+  scroll-margin-top: 50px;
 }
 
 body {
@@ -56,7 +56,6 @@ header {
 h2 {
   color: var(--text);
   font-size: 2rem;
-  margin-bottom: 0.5rem;
 }
 
 
@@ -227,7 +226,8 @@ nav a:hover::after {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 10rem 1rem;
+  text-align: center;
 }
 
 .hero {
