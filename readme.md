@@ -2,6 +2,10 @@
 
 A simple portfolio application to showcase your projects and skills.
 
+## Published in Github Pages
+
+Link: https://nivekian.github.io/html-css-aval/
+
 ## Features
 
 - Clean and responsive design
@@ -35,7 +39,7 @@ portfolio-app/
 
 ## Portfolio Preview
 
-![Portfolio Screenshot](./img/screenshot.png.png)
+![Portfolio Screenshot](./img/screenshot.png)
 
 ## Customization
 
