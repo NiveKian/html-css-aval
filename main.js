@@ -59,3 +59,46 @@ profileImage.addEventListener("click", () => {
 profileImage.addEventListener("animationend", () => {
   profileImage.classList.remove("spin");
 });
+
+
+// Verify "get-in-touch" form inputs
+import verifyEmail from "./snippets/validate-email.js";
+import verifyPhone from "./snippets/validate-phone.js";
+
+const formInputs = document.querySelectorAll("[required]");
+formInputs.forEach((input) => {
+  input.addEventListener("blur", () => {
+    verifyInput(input);
+  });
+  input.addEventListener("invalid", (event) => {
+    event.preventDefault();
+  });
+});
+
+const verifyInput = (input) => {
+  if (input.name === "email") {
+    if (verifyEmail(input.value)) {
+      console.log("email válido");
+      input.classList.remove("invalid","form-input--error");
+      console.log(input.classList);
+    } else {
+      console.log("email inválido");
+      input.classList.add("invalid","form-input--error");
+      console.log(input.classList);
+    }
+  } else if (input.name ==="cellphone") {
+    if (verifyPhone(input.value)) {
+      console.log("Telefone válido");
+      input.classList.remove("invalid","form-input--error");
+      console.log(input.classList);
+    } else {
+      console.log("Telefone inválido");
+      input.classList.add("invalid","form-input--error");
+      console.log(input.classList);
+    }
+  }
+}
+
+
+// Build photo printer grabber
+

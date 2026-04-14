@@ -55,7 +55,7 @@ header {
 
 h2 {
   color: var(--text);
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 
@@ -443,21 +443,130 @@ nav a:hover::after {
   font-weight: bold;
 }
 
-.form-container input {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
 .form-container textarea {
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
   min-height: 8rem;
+  color: #333;
 }
 
+.form-input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.form-input--error {
+  border: 2px solid #ff0000;
+}
+
+.form-input--error:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+/* ///////////////////////////////// FORM PHOTO AND CAMERA ///////// */
+
+.form-photo-container {
+  background: var(--card);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 600px;
+
+  border: 1px #ccc solid;
+  border-radius: 10px;
+}
+
+.form-photo-container h2 {
+  font-size: 2rem;
+  /* font-style: bold; */
+  font-weight: bolder;
+}
+
+.form-photo-container p {
+  font-size: 1rem;
+  font-style: bold;
+}
+
+.form-photo--image_display {
+  display: block;
+  border: 1px #121212;
+}
+
+.form-photo--image {
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 1rem;
+}
+
+.form-photo--image:hover {
+  opacity: 0.8;
+}
+
+.form-photo--camera {
+  display: none;
+}
+
+.form-photo--message{
+  display: none;
+}
+
+.form-photo--camera {
+  display: none;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontal */
+  justify-content: center;
+  gap: 1.5rem;
+
+  width: 100%;
+}
+
+/* VIDEO */
+.form-photo--camera video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+/* MESSAGE CONTAINER */
+.form-photo--message {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+/* CANVAS (ESSENCIAL) */
+.form-photo--message canvas {
+  width: 100%;          /* responsivo */
+  max-width: 400px;     /* limite */
+  height: auto;         /* mantém proporção */
+
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+/* TEXT */
+.form-photo--message p {
+  font-size: 1rem;
+  color: --text;
+  text-align: center;
+}
 /* ///////////////////////////////// FOOTER AND SOCIALS ///////// */
 
 footer {
